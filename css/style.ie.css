@@ -1,0 +1,71 @@
+/* --------------------------------------------------------------------------------
+   [All Internet Explorer version styles]
+-------------------------------------------------------------------------------- */
+html { font-size: 101%; }
+
+/* --------------------------------------------------------------------------------
+   [6-7 Internet Explorer version styles]
+-------------------------------------------------------------------------------- */
+
+.line,
+.cnt,
+.ftr {zoom:1;}
+
+.b-inline,
+.btn,
+.ico,
+.itm,
+.slider__panel .panel-nav,
+.main__block,
+.ftr__block,
+.ftr__form-item,
+.catalog .btn-group,
+.catalog__block,
+#nav .underBlock .contentList .itm {display:inline; zoom:1;}
+
+.ico {font:0/0 a;}
+
+#nav .underBlock .contentList {
+	background:#000;
+}
+
+.hdr {
+	position:relative;
+	z-index:5;
+}
+#nav {height: 57px;display:inline; zoom:1; }
+.menu { margin-bottom:-10px;}
+#nav .underBlock {
+	top:44px;
+}
+#nav li.hover .underBlock { }
+
+#nav .underBlock .contentList .itm {
+	/*float:left;*/
+	/*white-space:normal;*/
+}
+
+.btn-group .ico_type_caret { margin-top:6px;}
+
+.catalog__head { position:relative; z-index:2;}
+.catalog .filter_sort { top:24px;}
+.catalog__block-pic { height:242px;}
+
+.filter-table,
+.filter-table table { width:auto;}
+
+/* --------------------------------------------------------------------------------
+   [6 Internet Explorer version styles]
+-------------------------------------------------------------------------------- */
+
+
+
+
+/* --------------------------------------------------------------------------------
+   [7 Internet Explorer version styles]
+-------------------------------------------------------------------------------- */
+
+*+html .b-input-i { margin-right:26px;}
+
+*+html #nav .underBlock .contentList {}
+*+html #nav .underBlock .contentList .itm { }

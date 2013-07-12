@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title></title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link href="css/jquery-ui-1.10.1.custom.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300italic&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
+    <!--[if lt IE 8]><link rel="stylesheet" href="css/style.ie.css" /><![endif]-->
+    <!--[if lt IE 7]><script type="text/javascript" src="js/pngfix.js"></script><![endif]-->
+    <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
+    <script src="js/jquery-ui-1.10.1.custom.js"></script>
+    <script src="js/jzoom.js"></script>
+    <script src="http://code.jquery.com/ui/1.10.1/jquery-ui.js"></script>
+    <script>
+        $(function() {
+            _height = 500;
+            $( "#sliderzoom" ).slider({
+                min: _height,
+                max: 1000,
+
+                slide: function() {
+                    var value = $( "#sliderzoom" ).slider( "value" );
+                    $('#img img').height(value).css({"margin-top" : -(value - _height)/2, "margin-left" : -(value - _height)/2})
+                }
+            })
+        });
+    </script>
+</head>
+<body>
+
+<div class="container">
+    <div class="black-line">
+        <div class="case line">
+            <div class="case__inner">
+                <div class="social">
+                    <a class="ico ico_type_vk" href="#"></a>
+                    <a class="ico ico_type_tw" href="#"></a>
+                    <a class="ico ico_type_foto" href="#"></a>
+                    <a class="ico ico_type_fb" href="#"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="hdr">
+        <div class="case line">
+            <div class="case__inner line">
+                <div class="hdr__block-left">
+                    <a class="btn hdr-btn-active" href="#">Для мужчин</a>
+                    <a class="btn" href="#">Для женщин</a>
+                    <div class="phone">
+                        <i class="ico ico_type_phone"></i>
+                        <span class="phone__num">8-495-226-11-46</span>
+                    </div>
+                </div>
+                <div class="logo">
+                    <a class="b-link" href="#"><img src="img/logo.png" alt=""></a>
+                </div>
+                <div class="hdr__block-right">
+                    <form action="#">
+                        <span class="search_input_container" style="display:none">
+                            <input class="search_input" type="text" id="sText" name="sText" style="width: 160px; font-size: 8pt; right: 0px;" placeholder="Поиск">
+                        </span>
+                        <span class="search_real" style="display:none">
+                            <input type="submit" name="sButton" class="sButton" value=" ">
+                        </span>
+                        <span class="search_fake" >
+                            <input type="button" name="sButton" class="sButton">
+                        </span>
+                        <a class="ico ico_type_cart" href="#"></a>
+                    </form>
+                </div>
+                <div class="menu">
+                    <ul id="nav">
+                        <li class="navLi">
+                            <a href="/catalog/odezhda/" class="generalLnk" title="Вернуться на главную страницу">Одежда</a>
+                            <div class="underBlock">
+                                <table class="contentList">
+                                    <tbody>
+                                    <tr>
+                                        <td class="itm">
+                                            <a href="/catalog/odezhda/3">Брюки</a>
+                                            <a href="/catalog/odezhda/12">Шорты</a>
+                                            <a href="/catalog/odezhda/32">Джинсы</a>
+                                        </td>
+                                        <td class="itm">
+                                            <a href="/catalog/odezhda/1">Рубашки</a>
+                                            <a href="/catalog/odezhda/7">Футболки</a>
+                                            <a href="/catalog/odezhda/11">Майки</a>
+                                            <a href="/catalog/odezhda/4">Кардиганы</a>
+                                        </td>
+                                        <td class="itm">
+                                            <a href="/catalog/odezhda/2">Поло</a>
+                                            <a href="/catalog/odezhda/5">Свитеры</a>
+                                            <a href="/catalog/odezhda/6">Толстовки</a>
+                                            <a href="/catalog/odezhda/31">Пуховики</a>
+                                        </td>
+                                        <td class="itm">
+                                            <a href="/catalog/odezhda/16">Куртки</a>
+                                            <a href="/catalog/odezhda/33">Ветровки</a>
+                                            <a href="/catalog/odezhda/15">Повседневное</a>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </li>
+                        <li class="navLi">
+                            <a href="/catalog/obuv/" class="generalLnk" title="">Обувь</a>
+                            <div class="underBlock">
+                                <table class="contentList">
+                                    <tbody>
+                                    <tr>
+                                        <td class="itm">
+                                            <a href="/catalog/obuv/9">Ботинки</a>
+                                            <a href="/catalog/obuv/8">Кеды</a>
+                                            <a href="/catalog/obuv/28">Мокасины</a>
+                                        </td>
+                                        <td class="itm">
+                                            <a href="/catalog/obuv/25">Кроссовки</a>
+                                            <a href="/catalog/obuv/26">Туфли</a>
+                                        </td>
+                                        <td class="itm">
+                                            <a href="/catalog/obuv/29">Носки</a>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </li>
+                        <li class="navLi">
+                            <a href="/catalog/aksesuari/" class="generalLnk" title="">Аксесуары</a>
+                            <div class="underBlock">
+                                <table class="contentList">
+                                    <tbody>
+                                    <tr>
+                                        <td class="itm ">
+                                            <a href="/catalog/aksesuari/19">Рюкзаки</a>
+                                            <a href="/catalog/aksesuari/14">Сумки</a>
+                                            <a href="/catalog/aksesuari/10">Бумажники</a>
+                                        </td>
+                                        <td class="itm">
+                                            <a href="/catalog/aksesuari/17">Кепки</a>
+                                            <a href="/catalog/aksesuari/18">Шляпы</a>
+                                            <a href="/catalog/aksesuari/30">Галстуки</a>
+                                        </td>
+                                        <td class="itm">
+                                            <a href="/catalog/aksesuari/23">Браслеты</a>
+                                            <a href="/catalog/aksesuari/24">Брелоки</a>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </li>
+                        <li class="navLi">
+                            <a href="/blog" class="generalLnk generalLnk_last" title="">Блог</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="black-line">
+    </div>
+    <div class="cnt">
+        <div class="case">
+            <div class="case__inner line">
+                <div class="product-img-box">
+                    <div id="img" class="minizoompan">
+                        <img id="draggable" src="img/t01.jpg" alt="">
+                    </div>
+                    <script>
+                        //$( "#draggable" ).draggable({containment: "parent"});
+                        $('#img').gzoom({
+                                        sW: 520/1.6,
+                                        sH: 780/1.6,
+                                        lW: 520,
+                                        lH: 780,
+                                        lighbox : true
+                        });
+                    </script>
+                </div>
+                    <ul class="thumbs">
+                        <li>
+                            <a class="gallery-thumb" href="#"><img src="img/t01-back.png" alt=""></a>
+                        </li>
+                        <li>
+                            <a class="gallery-thumb" href="#"><img src="img/t01-front.png" alt=""></a>
+                        </li>
+                        <li>
+                            <a class="gallery-thumb" href="#"><img src="img/t01-front.png" alt=""></a>
+                        </li>
+                        <li>
+                            <a class="gallery-thumb" href="#"><img src="img/t01-front.png" alt=""></a>
+                        </li>
+                    </ul>
+                    <script type="text/javascript" charset="utf-8">
+                        jQuery.noConflict;
+                        jQuery(document).ready(function(){
+                            jQuery('.gallery-thumb').click(function(){
+                                jQuery('#image').attr('src',jQuery(this).attr('href')).width(jQuery('.product-image-zoom').width()).css({'left':0,'top':0});
+                                jQuery('#handle').css('left',0);
+                                return false;
+                            });
+                        });
+                    </script>
+                <div class="productdetails">
+                    <h1>Рюкзак Stussy</h1>
+                    <p>
+                        <span class="price-del">5885 руб</span>
+                    </p>
+                    <p class="price">
+                        4119 руб
+                    </p>
+                    <p class="description">
+                        Капсульная коллекция Ellesse и Wood Wood сочетает в себе лучшие черты обеих марок: богатое спортивное наследие итальянской компании и современный скандинавский уличный стиль. Результатом этой непростой комбинации стала линия лаконичной и в то же время изящной одежды, выдержанной в контрастной фирменной гамме синего, белого и оранжевого.
+                        Ограниченная серия включает в себя набор классических предметов спортивного стиля: рубашки-поло, спортивные куртки, панамы, толстовки.
+                    </p>
+                    <div class="productdetails__form line">
+                        <div class="productdetails__form-left">
+                            <p>Артикул</p>
+                            <p>Тип</p>
+                            <p>Марка</p>
+                            <p>Размер</p>
+                            <p>Цвет</p>
+                        </div>
+                        <div class="productdetails__form-left productdetails__form-left_describe">
+                            <p class="">null (служебный 33118)</p>
+                            <p>Рюкзак</p>
+                            <p>Stussy</p>
+                            <p><select name="razmer">
+                                <option value="43">ON</option><option value="44">S</option></select>
+                            </p>
+                            <p><select name="color">
+                                <option value="43">yellow</option><option value="44"> </option></select>
+                                <a class="ico ico_type_setka" href="#"></a>
+                            </p>
+                        </div>
+                        <div class="productdetails__form-right">
+                            <a class="ico ico_type_delivery" href="#"></a>
+                            <a class="ico ico_type_vozvrat" href="#"></a>
+                        </div>
+                    </div>
+                    <div class="productdetails__outinstock">
+                        Сожалеем, но выбранного товара сейчас нет на складе
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<div class="ftr">
+    <div class="black-line">
+    </div>
+    <div class="case">
+        <div class="case__inner">
+
+            <div class="ftr__block ftr__block_first">
+                <ul>
+                    <li>
+                        <a href="#">Об URBANRUSH</a>
+                    </li>
+                    <li>
+                        <a href="#">Блог/Новости</a>
+                    </li>
+                    <li>
+                        <a href="#">Доставка</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="ftr__block">
+                <ul>
+                    <li>
+                        <a href="#">Оплата</a>
+                    </li>
+                    <li>
+                        <a href="#">Обмен и возврат</a>
+                    </li>
+                    <li>
+                        <a href="#">Размерная сетка</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="ftr__block">
+                <ul>
+                    <li>
+                        <a href="#">Соглашение покупателя</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="ftr__block ftr__block_last">
+                <div class="phone">
+                    <a class="phone__item" href="#">
+                        <i class="ico ico_type_phone"></i>
+                        <span class="phone__num">8-495-226-11-46</span>
+                    </a>
+                    <a class="phone__item phone__item-skype" href="#"><i class="ico ico_type_skype"></i><span class="phone__item-text">бесплатный звонок</span></a>
+                </div>
+            </div>
+            <div class="ftr__form">
+                <div class="ftr__form-item">
+                    <div class="b-input-i">
+                        <input  type="text" class="b-input" data-placeholder-text="Введите E-mail" value="">
+                    </div>
+                </div>
+                <div class="ftr__form-item">
+                    <div class="b-input-i">
+                        <input type="text" class="b-input" data-placeholder-text="Введите номер телефона" value="">
+                    </div>
+                </div>
+                <div class="ftr__form-item">
+                    <div class="b-input-i">
+                        <input type="submit" class="b-input b-input_sub" value="подписаться на рассылку">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<div class="black-line">
+</div>
+<div class="bottom-cnt">
+    <div class="case">
+        <div class="case__inner">
+            <p>
+                Традиционная английская марка Fred Perry. Классические пуховики и куртки Penfield. Модная уличная одежда Stussy. Обувь Pointer, Gourmet. Urbanrush представляет коллекцию модной уличной одежды, от ведущих дизайнеров из Англии, Америки и Японии.
+                <a href="http://UrbanRush.ru/">Urbanrush.ru</a> — это концептуальный онлайн–магазин модной уличной одежды.
+                Вашему вниманию представлен тщательно отобранный ассортимент мужских и женских товаров от ведущих мировых брендов и дизайнеров, таких как Fred Perry, Pointer,Penfield, Stussy . Регулярные обновление коллекции и скидки на товары уходящих сезонов, превратят интернет-шоппинг в удовольствие с максимальной экономией времени и средств.
+                В основе концепции нашего интернет – магазина заложены слова “urban” – городской, “rush”- спешка, стремление. Городская суета, которую мы испытываем каждый день в ритме большого города является нашей креативной платформой для каждого бренда, каждого товара из коллекции магазина.
+            </p>
+        </div>
+    </div>
+</div>
+</body>
+</html>
